@@ -24,7 +24,7 @@ const Tabs = () => {
   return (
     <div
       onMouseLeave={() => handleSetSelected(null)}
-      className="relative flex h-fit gap-2 "
+      className="relative max-lg:hidden flex h-fit gap-2 "
     >
       {TABS.map((t) => {
         return (
