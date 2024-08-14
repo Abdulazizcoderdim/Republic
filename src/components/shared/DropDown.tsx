@@ -24,7 +24,7 @@ const Tabs = () => {
   return (
     <div
       onMouseLeave={() => handleSetSelected(null)}
-      className="relative max-lg:hidden flex h-fit gap-2 "
+      className="relative max-lg:hidden flex h-fit gap-2"
     >
       {TABS.map((t) => {
         return (
@@ -82,7 +82,7 @@ const Content = ({ selected, dir }: any) => {
         opacity: 0,
         y: 8,
       }}
-      className="absolute left-0 top-[calc(100%_+_24px)] min-w-[100vh] rounded-lg border border-blue-600 bg-white p-4"
+      className="absolute left-0 top-[calc(100%_+_24px)] min-w-[100vh] rounded-lg shadow-lg border bg-white p-4"
     >
       <Bridge />
       <Nub selected={selected} />
@@ -143,7 +143,7 @@ const Nub = ({ selected }: { selected: any }) => {
       }}
       animate={{ left }}
       transition={{ duration: 0.25, ease: 'easeInOut' }}
-      className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-tl border border-blue-600 bg-blue-600"
+      className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-tl border bg-white"
     />
   )
 }

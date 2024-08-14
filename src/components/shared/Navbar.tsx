@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="border-b bg-white fixed right-0 left-0 top-0">
+      <div className="border-b bg-white fixed right-0 z-10 left-0 top-0">
         <div className="container w-full bg-white">
           <div className="py-5 flex justify-between items-center">
             <div className="flex items-center gap-x-5 w-full">
