@@ -2,3 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Swiper pagination container */
+.swiper-pagination {
+    bottom: 10px; /* Vertical position */
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Swiper pagination bullets */
+  .swiper-pagination-bullet {
+    background: transparent; /* Bullet color */
+    opacity: 0.7; /* Bullet opacity */
+    width: 15px; /* Bullet width */
+    height: 15px; /* Bullet height */
+    border-radius: 50%; /* Bullet shape */
+    border: 2px solid white;
+  }
+  
+  /* Swiper active bullet */
+  .swiper-pagination-bullet-active {
+    background: white; /* Active bullet color */
+    opacity: 1; /* Active bullet opacity */
+  }
+  
