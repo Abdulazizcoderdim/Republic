@@ -26,3 +26,16 @@
     opacity: 1; /* Active bullet opacity */
   }
   
+  /* ---- */
+  
+  
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 150px; /* Qanchalik kengroq bo'lsa, shuncha ko'proq xira ko'rinadi */
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    pointer-events: none; /* Gradient layer bilan interaktivlikni cheklash */
+  }
+  
