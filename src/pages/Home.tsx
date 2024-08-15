@@ -1,3 +1,4 @@
+import Founders from '../components/shared/Founders'
 import HeroPage from '../components/shared/HeroPage'
 import MostTraction from '../components/shared/MostTraction'
 import PortfolioWins from '../components/shared/PortfolioWins'
@@ -8,6 +9,7 @@ const Home = () => {
       <HeroPage />
       <MostTraction />
       <PortfolioWins />
+      <Founders />
     </main>
   )
 }
