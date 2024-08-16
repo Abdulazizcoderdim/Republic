@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className="py-5 flex justify-between items-center">
             <div className="flex items-center gap-x-5 w-full">
               <Link to={'/'}>
-                <Logo />
+                <Logo color="#0B142B" />
               </Link>
               <ShiftingDropDown />
               <div className="flex max-lg:hidden group py-2 px-4 text-neutral-500 rounded-full items-center space-x-2 bg-[#F2F2F2]">
