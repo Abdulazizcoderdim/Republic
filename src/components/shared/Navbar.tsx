@@ -123,7 +123,7 @@ const Navbar = () => {
       {/* mobile */}
 
       {burgerMenu && (
-        <div className="lg:hidden fixed right-0 bottom-0 left-0 h-[calc(100vh_-_64px)] w-full ">
+        <div className="lg:hidden bg-white z-50 fixed right-0 bottom-0 left-0 h-[calc(100vh_-_64px)] w-full ">
           <div className="container">
             <div className="flex flex-col gap-10 py-5">
               <div className="border-b-2 pb-2">
