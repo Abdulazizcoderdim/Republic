@@ -1,11 +1,23 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 import Swiper from './Swiper'
 
 const HeroPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 400,
+    })
+  }, [])
   return (
-    <div>
+    <div data-aos="fade-up">
       <Swiper />
       <div className="container py-3">
-        <div className="grid lg:grid-cols-4 grid-cols-2 gap-5 items-center">
+        <div
+          data-aos="fade-up"
+          className="grid lg:grid-cols-4 grid-cols-2 gap-5 items-center"
+        >
           <div>
             <h1 className="text-2xl font-bold">3M+</h1>
             <p className="text-neutral-500 text-lg">

@@ -1,3 +1,6 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 import { BsLinkedin } from 'react-icons/bs'
 import { FaFacebookSquare, FaTwitter } from 'react-icons/fa'
 import { FaDiscord } from 'react-icons/fa6'
@@ -5,8 +8,14 @@ import { FiInstagram } from 'react-icons/fi'
 import Logo from './Logo'
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 400,
+    })
+  }, [])
   return (
-    <div className="bg-[#161D2D] py-10">
+    <div data-aos="fade-up" className="bg-[#161D2D] py-10">
       <div className="container">
         <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-10">
           <div className="space-y-5">

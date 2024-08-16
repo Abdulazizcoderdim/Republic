@@ -1,9 +1,18 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 import { FaCheck } from 'react-icons/fa'
 
 const Founders = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 400,
+    })
+  }, [])
   return (
     <div className="bg-white py-20">
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <h1 className="text-2xl font-medium text-neutral-500">For founders</h1>
         <div className="flex items-center max-md:flex-col justify-between gap-10">
           <div className="md:w-1/2 space-y-10">

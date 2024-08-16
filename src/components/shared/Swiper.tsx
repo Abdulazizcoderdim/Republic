@@ -9,6 +9,9 @@ import {
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 import 'swiper/css'
 import 'swiper/css/autoplay'
 import 'swiper/css/navigation'
@@ -16,6 +19,12 @@ import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 
 export default () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true
+    })
+  }, [])
   return (
     <Swiper
       // install Swiper modules

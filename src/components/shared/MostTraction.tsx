@@ -1,9 +1,18 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 import { mostTraction } from '../../constants'
 
 const MostTraction = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 400,
+    })
+  }, [])
   return (
     <div className="mt-20 container">
-      <div className="space-y-2">
+      <div className="space-y-2" data-aos="fade-up">
         <h1 className="text-4xl font-bold">Most traction</h1>
         <p className="text-lg text-neutral-500">
           The deals attracting the most interest right now

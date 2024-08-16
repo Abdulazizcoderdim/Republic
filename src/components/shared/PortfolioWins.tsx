@@ -1,10 +1,19 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import SwiperPort from './SwiperPort'
 
 const PortfolioWins = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 400,
+    })
+  }, [])
   return (
     <div className="bg-[#F2F2F2] py-20 mt-28">
-      <div className="container space-y-10">
+      <div className="container space-y-10" data-aos="fade-up">
         <div className="space-y-2 mb-10">
           <h1 className="text-5xl font-bold">Portfolio wins</h1>
           <p className="text-xl text-neutral-600">
