@@ -14,6 +14,7 @@ const SwiperPort = () => {
     <>
       <Swiper
         // install Swiper modules
+        
         className="max-h-[70vh] relative"
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         slidesPerView={1}

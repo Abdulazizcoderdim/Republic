@@ -13,8 +13,8 @@ const PortfolioWins = () => {
   }, [])
   return (
     <div className="bg-[#F2F2F2] py-20 mt-28">
-      <div className="container space-y-10" data-aos="fade-up">
-        <div className="space-y-2 mb-10">
+      <div className="container space-y-10">
+        <div data-aos="fade-up" className="space-y-2 mb-10">
           <h1 className="text-5xl font-bold">Portfolio wins</h1>
           <p className="text-xl text-neutral-600">
             Here are a few notable stories from Republics portfolio.
@@ -26,7 +26,7 @@ const PortfolioWins = () => {
           <SwiperPort />
         </Link>
 
-        <div className="mt-20 space-y-10">
+        <div data-aos="fade-up" className="mt-20 space-y-10">
           <div className="space-y-3">
             <h1 className="text-5xl font-bold">Co-invest with the best</h1>
             <p className="text-neutral-600 text-xl">
