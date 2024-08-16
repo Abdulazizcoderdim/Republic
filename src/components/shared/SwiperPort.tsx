@@ -14,7 +14,7 @@ const SwiperPort = () => {
     <>
       <Swiper
         // install Swiper modules
-        className="h-[70vh] relative"
+        className="max-h-[70vh] relative"
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         slidesPerView={1}
         breakpoints={{
@@ -28,15 +28,15 @@ const SwiperPort = () => {
         onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide>
-          <img src="/b1.png" className="rounded-3xl w-full h-full" alt="" />
+          <img src="/b1.png" className="rounded-3xl w-full md:h-full" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/b2.png" className="rounded-3xl w-full h-full" alt="" />
+          <img src="/b2.png" className="rounded-3xl w-full md:h-full" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/b3.png" className="rounded-3xl w-full h-full" alt="" />
+          <img src="/b3.png" className="rounded-3xl w-full md:h-full" alt="" />
         </SwiperSlide>
-        <div className="absolute z-50 w-[150px] bg-gradient-to-l from-white/90 to-transparent pointer-events-none top-0 right-0 h-full "></div>
+        <div className="absolute z-50 md:w-[150px] w-[80px] bg-gradient-to-l from-white/90 to-transparent pointer-events-none top-0 right-0 h-full "></div>
       </Swiper>
     </>
   )
